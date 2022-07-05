@@ -7,6 +7,7 @@ const  {useStore}=usestore()
   <div className="list">
     <div className="article_item" v-for="item in useStore.NewList" :key="item.art_id">
       <h3 className="van-ellipsis">{{item.title}}</h3>
+      <!-- img可能没有 -->
       <div className="img_box" v-for="img in item.cover.images" :key="img">
         <img
           :src="img"

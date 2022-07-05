@@ -1,15 +1,15 @@
-type channelsList={
+export type channelsList={
     id:number
     name:string
 }[]
 
-type data={
+export type data={
     data:{
         channels:channelsList
     }
     message:string
 }
-type Newlist={
+export type Newlist={
     title:string
     pubdate:string
     is_top:number
@@ -22,7 +22,7 @@ type Newlist={
     aut_id
     art_id
 }[]
-type Newdata={
+export type Newdata={
     data:{
         results:Newlist
         pre_timestamp:string

@@ -1,5 +1,6 @@
 import { defineStore } from "pinia";
 import axios from 'axios'
+import { channelsList,Newlist,data,Newdata } from "../types";
 export default defineStore('channel',{
     state() {
         return {
